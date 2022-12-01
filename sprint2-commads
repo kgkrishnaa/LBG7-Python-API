@@ -1,0 +1,12 @@
+#create dockerfile as shown below 
+
+#
+#FROM python:latest
+#WORKDIR /app
+#COPY . . 
+#RUN pip install -r requirements.txt 
+#ENTRYPOINT  ["python", "lbg.py"] 
+#
+
+#build the image using docker build and provide container name 
+docker build -t gopal-py-rest-api .
