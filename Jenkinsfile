@@ -5,13 +5,15 @@ pipeline {
             steps {
                 sh '''
                 docker-compose down
+                docker-compose build
                                  '''
             }
         }
         stage('push') {
             steps {
                 sh ''' 
-                docker-compose build 
+                docker push  gcr.io/lbg-python-cohort-8/gopal-lbg-python-api:latest
+ 
                 '''
             }
         }
