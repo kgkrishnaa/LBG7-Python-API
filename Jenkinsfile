@@ -4,9 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                 docker stop gopal-py-rest-api-run-instance
-                 docker build -t gopal-py-rest-api
-                 '''
+                docker-compose down
+                docker-compose up -d                 '''
             }
         }
         stage('push') {
