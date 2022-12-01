@@ -10,7 +10,9 @@ pipeline {
         }
         stage('push') {
             steps {
+                sh ''' 
                 docker-compose build 
+                '''
             }
         }
         stage('Deploy') {
