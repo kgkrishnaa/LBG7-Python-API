@@ -10,7 +10,7 @@ pipeline {
         }
         stage('push') {
             steps {
-                echo "No push here "
+                docker-compose build 
             }
         }
         stage('Deploy') {
