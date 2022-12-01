@@ -4,9 +4,28 @@
 #FROM python:latest
 #WORKDIR /app
 #COPY . . 
+#EXPOSE 8080
 #RUN pip install -r requirements.txt 
 #ENTRYPOINT  ["python", "lbg.py"] 
 #
-
+#Fixed application bug -> change the python file host to 0.0.0.0 from localhost
 #build the image using docker build and provide container name 
 docker build -t gopal-py-rest-api .
+
+# run the image by opening port 8080 and connecting to 8080 on the backed 
+docker run -d  -p 8080:8080 --name gopal-py-rest-api-run-instance gopal-py-rest-api
+
+# ACCESS THE application at 8080 -> resource -> index.html 
+#localhost:8080/index.html
+
+
+# Sprint 2 Tasks 
+install jenkins from shell script 
+
+create key pair 
+
+save key in git 
+manual clone / connect from  VM 
+
+Setup git repo as a freestyle project
+
