@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 docker-compose down
-                docker-compose up -d                 '''
+                                 '''
             }
         }
         stage('push') {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh ''' docker run -d -p 8080:8080 --name gopal-py-rest-api-run-instance gopal-py-rest-api 
+                sh '''docker-compose up -d 
                 ''' 
             }
         }

@@ -1,3 +1,5 @@
+
+
 #create dockerfile as shown below 
 
 #
@@ -32,3 +34,6 @@ Setup git repo as a freestyle project
 MAke changes to the commands file and see webhookin action 
 
 testing webhook 
+# install docker compose 
+# create nginx.conf in its dir - be aware of the serve name of the backend service it talks to 
+sudo apt install docker-compose
