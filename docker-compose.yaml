@@ -11,5 +11,5 @@ services:
       source: ./nginx/nginx.conf
       target: /etc/nginx/nginx.conf
   python-api:
-    image: gcr.io/lbg-python-cohort-8/kgkrishnaa/python-api:latest
+    image: gcr.io/lbg-python-cohort-8/gopal-python-api:latest
     build: ./

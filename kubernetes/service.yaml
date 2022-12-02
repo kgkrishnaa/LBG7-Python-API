@@ -34,6 +34,6 @@ spec:
       containers:
       - name: python-api
         imagePullPolicy: Always
-        image: kgkrishnaa/python-api:latest
+        image: gcr.io/lbg-python-cohort-8/gopal-python-api:latest
         ports:
         - containerPort: 8080
