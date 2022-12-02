@@ -12,7 +12,7 @@ pipeline {
         stage('push') {
             steps {
                 sh ''' 
-                docker push  gcr.io/lbg-python-cohort-8/kgkrishnaa/python-api:latest
+                docker push  gcr.io/lbg-python-cohort-8/gopal-python-api:latest
                 '''
             }
         }
