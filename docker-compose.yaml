@@ -10,8 +10,6 @@ services:
     - type: bind
       source: ./nginx/nginx.conf
       target: /etc/nginx/nginx.conf
-    depends_on:
-      - python-api
   python-api:
     image: gcr.io/lbg-python-cohort-8/kgkrishnaa/python-api:latest
     build: ./
