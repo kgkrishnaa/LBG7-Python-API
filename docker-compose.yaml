@@ -13,5 +13,5 @@ services:
     depends_on:
       - python-api
   python-api:
-    image: kgkrishnaa/python-api:latest
+    image: gcr.io/lbg-python-cohort-8/kgkrishnaa/python-api:latest
     build: ./

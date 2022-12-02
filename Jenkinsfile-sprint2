@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '''kubectl  apply -f ./kubernates/.
+                sh '''docker-compose up -d 
                 ''' 
             }
         }
